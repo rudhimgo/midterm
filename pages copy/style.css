@@ -1,0 +1,178 @@
+style.css
+
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.clearfix::after{
+			display: block;
+			clear: both;
+			height:0;
+			font-size: 0;
+			content:'';
+			visibility: hidden;
+		}
+	
+
+
+		/*-----------------------------------------FORM---------------------------------------------*/
+
+		form{
+			display:inline-block;
+			text-align: center;
+			font-family: 'IBM Plex Mono', monospace;
+			width: 40%;
+			
+		}
+
+
+/*--------------------------------------IMAGES-------------------------------------------------*/
+
+		body{
+			background-color: #bcebff;
+/*			background: url(img/pattern.jpg) no-repeat center center fixed;
+			-webkit-background-size:cover;
+			-moz-background-size:cover;
+			-o-background-size:cover;
+			background-size:cover;*/
+		}
+
+		.container {
+			margin:auto;
+			width: 100%;
+		}
+
+		img {
+			width: 50%;
+			display: inline-block;
+			float: left;
+		}
+
+
+
+
+/*------------------------------------NAV BAR---------------------------------------*/
+
+		header {
+			width: 100%;
+			background-color: black;
+			color:white;
+/*			line-height: 5px;*/
+			display: inline-block;
+			font-family: 'IBM Plex Mono', monospace;
+			padding-left: 10px;
+
+		}
+
+		h2 {
+			text-align: right;
+			margin-right: 200px;
+			font-family: 'IBM Plex Mono', monospace;
+		}
+
+
+		nav h1{
+			max-width: 20%;
+			float: left;
+			font-size: 30px;
+			margin: 10px;
+			
+		}
+
+		nav ul{
+			max-width: 80%;
+			float:right;
+			list-style-type: none;
+		}
+
+		nav ul li{
+			display: inline-block;
+		}
+
+		nav a{
+			display: block;
+			text-align: center;
+			padding: 10px 40px;
+			color: white;
+			text-decoration: none;
+			font-family: 'IBM Plex Mono', monospace;
+
+		}
+
+		nav a:hover{
+			background-color: white;
+			color: black;
+
+		}
+
+		button{
+			margin-bottom:300px;
+			width:50%;
+			align-self: center;
+		}
+
+
+
+
+/*-----------------------------------MEDIA QUERIES------------------------------------------------*/
+
+		/* Tablet SIze */
+		
+	@media only screen and (min-width: 768px) and (max-width: 1024px){
+
+		body{
+			background-color: #bcebff;
+		}
+
+		.container{
+			width: 100%;
+			margin: 0 auto;
+		}
+
+		.thumb{
+			width: 45%;
+			margin: 2.5%;
+			float: left;
+		}
+
+	}
+
+	/*target only devices with certain dimensions*/
+	
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+		body{
+			background-color: #bcebff;
+		}
+
+	}
+
+		/*Mobile Phones and small screens*/
+	@media only screen and (max-width: 767px){
+		body{
+			background-color: #bcebff;
+		}
+
+		.container{
+			width: 100%;
+		}
+
+		.thumb {
+			width: 90%;
+			margin: 5%;
+			float: left;
+		}
+
+		nav h1,
+		nav ul,
+		nav ul li{
+			min-width: 100%;
+			display: block;
+			float: none;
+			text-align:center;
+			margin:0;
+		}
+	}
